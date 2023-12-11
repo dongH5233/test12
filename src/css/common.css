@@ -1,0 +1,164 @@
+@charset 'utf-8';
+:root {
+  font-size: 10px;
+}
+body {
+  background-color: #222;
+  color: white;
+}
+.hd {
+  background-color: black;
+  padding: 40px 0 80px;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.hd i {
+  color: #5e60ce;
+  transform: rotate(-45deg) translate(-2px, 2px);
+}
+
+.hd span:nth-of-type(1) {
+  color: #4ea8de;
+}
+.hd span:nth-of-type(2) {
+  color: #1e6f9f;
+}
+.main {
+  width: calc(100% - 64px);
+  max-width: 600px;
+  margin: auto;
+}
+.inputBox {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  transform: translateY(-50%);
+}
+.inputBox input,
+.inputBox button {
+  border: none;
+  outline: none;
+  padding: 1rem;
+  border-radius: 1rem;
+  color: white;
+  transition: 0.3s;
+}
+.inputBox input {
+  flex: 1;
+  background-color: #555;
+  font-weight: bold;
+}
+.inputBox input:focus {
+  background-color: #333;
+}
+
+.inputBox button {
+  background-color: #1e0f9f;
+  text-transform: uppercase;
+  padding-right: 6rem;
+  position: relative;
+}
+.inputBox button:before {
+  content: "+";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 1px solid white;
+  border-radius: 50%;
+  right: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inputBox button:focus,
+.inputBox button:hover {
+  background-color: #114d70;
+}
+
+.count {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+  border-bottom: 1px dotted #666;
+  padding: 1rem 0;
+}
+
+.count span {
+  color: #5e60ce;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.count strong {
+  background-color: #777;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+}
+
+.noList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  font-size: 1.6rem;
+  padding: 3rem 0;
+}
+
+.noList i {
+  font-size: 5rem;
+}
+
+.listCon {
+  padding: 2rem 0;
+}
+.list {
+  font-size: 1.6rem;
+  border: 1px solid #666;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+.list:hover {
+  background-color: #444;
+}
+.list i:hover {
+  color: tomato;
+}
+.list > * {
+  padding: 1rem 2rem;
+}
+
+.list p {
+  flex: 1;
+}
+
+.modal {
+  background-color: white;
+  color: black;
+  border-radius: 1rem;
+  padding: 2rem;
+  font-size: 1.6rem;
+}
+
+.modal p {
+  padding-bottom: 2rem;
+}
+
+/* member 연습영역 */
+.member {
+  border: 1px solid #000;
+  width: 250px;
+  border-radius: 16px;
+  margin: 16px;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+}
